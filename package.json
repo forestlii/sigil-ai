@@ -19,6 +19,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "com.likeon.gas": "0.7.2"
+    "com.likeon.gas": "0.7.2",
+    "com.likeon.narrative": "0.1.0"
   }
 }

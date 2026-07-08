@@ -2,7 +2,8 @@
   "name": "Likeon.GAS.AI.Runtime",
   "rootNamespace": "Likeon.GAS.AI",
   "references": [
-    "Likeon.GAS.Runtime"
+    "Likeon.GAS.Runtime",
+    "Likeon.Narrative.Runtime"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

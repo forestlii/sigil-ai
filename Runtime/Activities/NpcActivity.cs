@@ -62,5 +62,16 @@ namespace Likeon.GAS.AI
             invalidGoals ??= EmptyInvalid;
             return best;
         }
+
+        // ── 执行钩子（任务6）：具体 activity override 来驱动 INpcAgent。基类默认空实现，不破坏纯打分测试 ──
+
+        /// <summary>被选中开始执行时调用（对应 UE RunActivity 起点）。</summary>
+        public virtual void OnEnter(INpcAgent agent, NpcGoal goal) { }
+
+        /// <summary>每 tick 推进；返回 true 表示 activity 已完成（目标达成）。</summary>
+        public virtual bool Tick(INpcAgent agent) => false;
+
+        /// <summary>结束（完成或被打断）时调用，做清理。</summary>
+        public virtual void OnExit(INpcAgent agent) { }
     }
 }
