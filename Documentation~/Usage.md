@@ -7,8 +7,8 @@
 > Namespace is `Likeon.GAS.AI`.
 >
 > Design stance: the AI framework (goal / activity / schedule / scoring) is pure logic on top of the
-> GameplayTag state bus. Time drives goals, goals compete by score, the winner runs. A C# re-design of
-> an Unreal Engine NPC AI/Activities system, rebuilt for Unity.
+> GameplayTag state bus. Time drives goals, goals compete by score, the winner runs — a component-based
+> NPC behavior-AI framework built for Unity.
 
 ## Contents
 

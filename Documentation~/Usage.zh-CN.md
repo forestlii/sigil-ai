@@ -6,8 +6,7 @@
 > `com.likeon.narrative`（事件桥）；移动用内置 NavMesh。命名空间 `Likeon.GAS.AI`。
 >
 > 设计立场：AI 框架（goal / activity / schedule / 打分）是建在 GameplayTag 状态总线之上的纯逻辑。
-> 时间驱动 goal、goal 按分数竞争、赢家去跑。是把一套 Unreal Engine 的 NPC AI/Activities 系统
-> 重新设计到 Unity。
+> 时间驱动 goal、goal 按分数竞争、赢家去跑——一套基于组件、面向 Unity 的 NPC 行为 AI 框架。
 
 ## 目录
 

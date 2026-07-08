@@ -8,8 +8,8 @@ A **companion package** for [Sigil](https://github.com/forestlii/sigil-gas) (`co
 browses the market at noon, and sleeps at 9pm, while quests and dialogue can inject high-priority goals that
 interrupt the routine.
 
-A component-based C# **re-design** (not a line-by-line port) of an Unreal Engine NPC AI / Activities
-system, rebuilt for Unity.
+Component-based and GameplayTag-driven, built for Unity 6 — add the brain to any GameObject, no base
+class to inherit.
 
 - **Depends on:** `com.likeon.gas` (tags) + `com.likeon.narrative` (event bridge). Movement uses the built-in NavMesh.
 - **Namespace:** `Likeon.GAS.AI`

@@ -7,8 +7,7 @@
 打分、跑分最高的那个——于是 NPC 能早 8 点在铁砧打铁、中午逛集市、晚 9 点睡觉；任务和对话还能塞进
 高优先级 goal 打断作息。
 
-这是把一套 Unreal Engine 的 NPC AI / Activities 系统**重新设计**（不是逐行翻译）到 Unity 的、
-基于组件的 C# 实现。
+基于组件、GameplayTag 驱动，面向 Unity 6——把大脑组件加到任意 GameObject 即可，无需继承基类。
 
 - **依赖：** `com.likeon.gas`（标签）+ `com.likeon.narrative`（事件桥）。移动用内置 NavMesh。
 - **命名空间：** `Likeon.GAS.AI`
