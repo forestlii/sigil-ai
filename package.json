@@ -2,7 +2,7 @@
   "name": "com.likeon.gas.ai",
   "version": "0.1.0",
   "displayName": "Sigil - GAS AI (NPC Behavior / Activities)",
-  "description": "NPC behavior AI for Unity RPGs: time-of-day schedules drive goals, a utility-AI activity selector scores goals and runs the best one (e.g. blacksmith at 8am, shop at noon, sleep at 9pm). A component-based C# re-design of the AI/Activities system from Narrative Pro / Narrative Arsenal (design by Narrative Tools), rebuilt for Unity. Integrates with com.likeon.gas (tags), com.likeon.gas.combat / com.likeon.gas.movement, com.unity.behavior, and bridges to com.likeon.narrative — heavier backends are optional and gated behind sub-assemblies.",
+  "description": "NPC behavior AI for Unity RPGs: time-of-day schedules drive goals, a utility-AI activity selector scores goals and runs the best one (e.g. blacksmith at 8am, shop at noon, sleep at 9pm). A component-based C# re-design of an Unreal Engine NPC AI/Activities system, rebuilt for Unity. Integrates with com.likeon.gas (tags), com.likeon.gas.combat / com.likeon.gas.movement, com.unity.behavior, and bridges to com.likeon.narrative — heavier backends are optional and gated behind sub-assemblies.",
   "unity": "6000.4",
   "keywords": [
     "ai",

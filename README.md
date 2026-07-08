@@ -8,8 +8,8 @@ A **companion package** for [Sigil](https://github.com/forestlii/sigil-gas) (`co
 browses the market at noon, and sleeps at 9pm, while quests and dialogue can inject high-priority goals that
 interrupt the routine.
 
-A component-based C# **re-design** (not a line-by-line port) of the AI / Activities system from
-**Narrative Pro / Narrative Arsenal** (original design by Narrative Tools), rebuilt for Unity.
+A component-based C# **re-design** (not a line-by-line port) of an Unreal Engine NPC AI / Activities
+system, rebuilt for Unity.
 
 - **Depends on:** `com.likeon.gas` (tags) + `com.likeon.narrative` (event bridge). Movement uses the built-in NavMesh.
 - **Namespace:** `Likeon.GAS.AI`

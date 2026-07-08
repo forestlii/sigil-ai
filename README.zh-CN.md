@@ -7,8 +7,8 @@
 打分、跑分最高的那个——于是 NPC 能早 8 点在铁砧打铁、中午逛集市、晚 9 点睡觉；任务和对话还能塞进
 高优先级 goal 打断作息。
 
-这是把 **Narrative Pro / Narrative Arsenal**（原设计 by Narrative Tools）的 AI / Activities 系统
-**重新设计**（不是逐行翻译）到 Unity 的、基于组件的 C# 实现。
+这是把一套 Unreal Engine 的 NPC AI / Activities 系统**重新设计**（不是逐行翻译）到 Unity 的、
+基于组件的 C# 实现。
 
 - **依赖：** `com.likeon.gas`（标签）+ `com.likeon.narrative`（事件桥）。移动用内置 NavMesh。
 - **命名空间：** `Likeon.GAS.AI`
