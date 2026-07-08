@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Likeon.GAS.AI
 {
     /// <summary>
-    /// 效用 AI 的选择器。忠实移植 UE <c>UNPCActivityComponent::PerformActivitySelection</c>：
+    /// 效用 AI 的选择器：
     /// 遍历所有 activity，各自对本类型 goal 打分，选出全局分最高（且 &gt; 0）的 (activity, bestGoal)；
     /// 打分中标记的无效 goal（过期）从池中清除；若最优即当前在跑项则不重启。
     /// 纯逻辑——"何时重选"（发/撤 goal、activity 结束时）由上层组件事件驱动，本类不含定时器。

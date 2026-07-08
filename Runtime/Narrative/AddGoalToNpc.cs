@@ -8,8 +8,8 @@ namespace Likeon.GAS.AI
 {
     /// <summary>
     /// narrative 桥：挂在对话/任务节点上的事件，触发时给目标 NPC 塞一个"去某点"的 goal，
-    /// 让剧情能引导 / 打断 NPC 作息（如任务触发"去村口迎接玩家"）。忠实移植 UE
-    /// <c>UNarrativeEvent_AddGoalToNPC</c>。依赖方向：<b>gas.ai → narrative 单向</b>，narrative 不知 ai 存在。
+    /// 让剧情能引导 / 打断 NPC 作息（如任务触发"去村口迎接玩家"）。
+    /// 依赖方向：<b>gas.ai → narrative 单向</b>，narrative 不知 ai 存在。
     /// 目标 NPC 取自 <see cref="NarrativeContext.Target"/>（该节点作用于谁）。
     /// </summary>
     [System.Serializable]

@@ -31,7 +31,7 @@ Install `com.likeon.gas`, `com.likeon.narrative`, then `com.likeon.gas.ai` (Pack
 
 ## 2. Time-of-day clock
 
-`TimeOfDayClock` is a pure-logic clock on the UE 0–2400 scale (800 = 8:00, 1200 = noon, 2100 = 21:00).
+`TimeOfDayClock` is a pure-logic clock on the 0–2400 scale (800 = 8:00, 1200 = noon, 2100 = 21:00).
 The host advances it (real seconds → game time); schedule/scoring read it.
 
 ```csharp

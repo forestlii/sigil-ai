@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Likeon.GAS.AI
 {
     /// <summary>
-    /// NPC 当前持有的 goal 集合。忠实移植 UE <c>FNPCGoalContainer</c>：按 <see cref="NpcGoal.GetKey"/> 去重
+    /// NPC 当前持有的 goal 集合。按 <see cref="NpcGoal.GetKey"/> 去重
     /// （同键不重复添加），支持按类型筛选（喂给对应 activity 打分）。纯逻辑，可直接测。
     /// </summary>
     public sealed class NpcGoalPool

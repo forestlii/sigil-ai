@@ -6,7 +6,7 @@ namespace Likeon.GAS.AI
 {
     /// <summary>
     /// 一天的作息表 = 一组 <see cref="ScheduleEntry"/>（纯逻辑，零 UnityEngine 运行时依赖，可直接测）。
-    /// 对应 UE <c>UNPCActivitySchedule</c>（DataAsset）。这里只做纯逻辑；ScriptableObject 数据包装
+    /// 这里只做纯逻辑；ScriptableObject 数据包装
     /// 留在组件/接线层（ScriptableObject 无法脱离 Unity 实例化）。
     /// 关键：<see cref="GetActiveEntries"/> 在窗口重叠时返回多条 → 这是"多 goal 并存竞争"的来源。
     /// </summary>

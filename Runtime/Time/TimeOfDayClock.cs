@@ -6,13 +6,13 @@ namespace Likeon.GAS.AI
 {
     /// <summary>
     /// 纯逻辑时钟（POCO，零 UnityEngine 依赖，可在 EditMode 或 dotnet 直接测）。
-    /// 忠实移植 UE <c>ANarrativeGameState::UpdateTimeOfDay</c> 的推进：累加
+    /// 时间推进逻辑：累加
     /// <see cref="AccumulatedTime"/>，当前时刻 <see cref="TimeOfDay"/> = Fmod(AccumulatedTime, 2400)。
     /// 现实秒 → 游戏时间的换算由上层组件负责，本类只吃 2400 制的时间增量。
     /// </summary>
     public sealed class TimeOfDayClock : ITimeOfDay
     {
-        /// <summary>一天的时间长度（2400 制）。对应 UE 的 2400。</summary>
+        /// <summary>一天的时间长度（2400 制）。</summary>
         public const float DayLength = 2400f;
 
         /// <summary>总累计时间，2400 = 一天，不回绕。</summary>
@@ -37,7 +37,7 @@ namespace Likeon.GAS.AI
         }
 
         /// <summary>
-        /// 推进游戏时间（2400 制的增量，须 &gt;= 0）。对应 UE 里对 AccumulatedTime 的累加。
+        /// 推进游戏时间（2400 制的增量，须 &gt;= 0），累加到 AccumulatedTime。
         /// </summary>
         public void Advance(float deltaGameUnits)
         {

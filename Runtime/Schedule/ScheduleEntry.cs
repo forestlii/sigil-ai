@@ -7,9 +7,9 @@ using Likeon.GAS;
 namespace Likeon.GAS.AI
 {
     /// <summary>
-    /// 作息表里的一条定时行为。忠实移植 UE <c>UScheduledBehavior_AddNPCGoal</c> 的语义：
+    /// 作息表里的一条定时行为：
     /// 有起止时间窗口，窗口内向 NPC 提供一个 goal（<see cref="CreateGoal"/>），窗口外撤销。
-    /// 时间用 UE 的 0–2400 制式（800=8:00）。窗口可跨午夜（Start &gt; End，如 2200–0600 睡觉）。
+    /// 时间用 0–2400 制式（800=8:00）。窗口可跨午夜（Start &gt; End，如 2200–0600 睡觉）。
     /// M-AI-1 生成 <see cref="MoveGoal"/>：带目标点 + 分数 + 意图标签。
     /// </summary>
     [Serializable]
@@ -35,7 +35,7 @@ namespace Likeon.GAS.AI
             return timeOfDay >= StartTime || timeOfDay < EndTime; // 跨午夜 [Start,2400)∪[0,End)
         }
 
-        /// <summary>依本条目造一个 MoveGoal（目标点/分数/标签）。对应 UE ProvideGoal。</summary>
+        /// <summary>依本条目造一个 MoveGoal（目标点/分数/标签）。</summary>
         public MoveGoal CreateGoal() => new MoveGoal(Destination, Score) { GoalTag = GoalTag };
     }
 }

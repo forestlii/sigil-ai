@@ -7,7 +7,7 @@ using Likeon.GAS;
 namespace Likeon.GAS.AI
 {
     /// <summary>
-    /// NPC "大脑"组件（对应 UE APawn+AAIController 塌成的组件栈）：持时钟 + 作息驱动 + goal 池 + 效用选择器，
+    /// NPC "大脑"组件（身体 + 大脑塌进同一 GameObject 的组件栈）：持时钟 + 作息驱动 + goal 池 + 效用选择器，
     /// 每帧推进时间、按作息发/撤 goal、选出最优 activity 并驱动 <see cref="NavMeshAgent"/> 移动。
     /// 自身实现 <see cref="IActivityScoringContext"/>（供打分）与 <see cref="INpcAgent"/>（供 activity 驱动身体）。
     /// 加到任意带 NavMeshAgent 的 GameObject 上即可，零基类继承（对齐 NarrativeComponent 风格）。

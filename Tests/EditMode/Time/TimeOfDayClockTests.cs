@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace Likeon.GAS.AI.Tests
 {
     /// <summary>
-    /// 时钟推进逻辑（纯逻辑）测试。制式 = UE 的 0–2400 四位时钟：800=8:00、1200=正午、2100=21:00。
+    /// 时钟推进逻辑（纯逻辑）测试。制式 = 0–2400 四位时钟：800=8:00、1200=正午、2100=21:00。
     /// </summary>
     public class TimeOfDayClockTests
     {

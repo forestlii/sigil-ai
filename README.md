@@ -38,7 +38,7 @@ The package ships with EditMode tests under `Tests/`. Add the package to `"testa
 
 ## Features
 
-- **TimeOfDayClock** — a pure-logic clock on the UE-style 0–2400 scale (800 = 8:00, 1200 = noon, 2100 = 21:00); advance, midnight wrap, day count.
+- **TimeOfDayClock** — a pure-logic clock on a 0–2400 scale (800 = 8:00, 1200 = noon, 2100 = 21:00); advance, midnight wrap, day count.
 - **NpcGoal / MoveGoal** — a goal is an intent with an overridable **score**, tag **gates** (block / require), a **dedup key**, and an optional **lifetime**.
 - **ActivitySchedule + ScheduleGoalDriver** — a day's timed entries; **overlapping windows** add/remove goals as time passes, which is where **multiple goals compete**.
 - **NpcActivity + ActivitySelector** — utility scoring: each activity scores its supported goals (activity score = its best goal's score), the global-best `(activity, goal)` runs; invalid/expired goals are pruned; no restart when the pick is unchanged.

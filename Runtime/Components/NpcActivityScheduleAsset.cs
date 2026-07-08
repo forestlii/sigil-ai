@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Likeon.GAS.AI
 {
     /// <summary>
-    /// 作息表数据资产（一天的定时条目）。对应 UE <c>UNPCActivitySchedule</c> DataAsset。
+    /// 作息表数据资产（一天的定时条目）。
     /// 纯数据容器——运行时 <see cref="BuildSchedule"/> 出纯逻辑 <see cref="ActivitySchedule"/> 供组件用。
     /// </summary>
     [CreateAssetMenu(menuName = "Likeon/GAS AI/NPC Activity Schedule", fileName = "NpcActivitySchedule")]

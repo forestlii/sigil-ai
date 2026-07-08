@@ -36,7 +36,7 @@
 
 ## 功能
 
-- **TimeOfDayClock** — UE 式 0–2400 制的纯逻辑时钟（800 = 8:00、1200 = 正午、2100 = 21:00）；推进、跨午夜回绕、天数计。
+- **TimeOfDayClock** — 0–2400 制的纯逻辑时钟（800 = 8:00、1200 = 正午、2100 = 21:00）；推进、跨午夜回绕、天数计。
 - **NpcGoal / MoveGoal** — goal 是"意图"，带可 override 的**分数**、标签**门禁**（block / require）、**去重键**、可选**存活期**。
 - **ActivitySchedule + ScheduleGoalDriver** — 一天的定时条目；**窗口可重叠**，随时间进出窗口发/撤 goal——这正是**多 goal 竞争**的来源。
 - **NpcActivity + ActivitySelector** — 效用打分：每个 activity 给它支持的 goal 打分（activity 分 = 其最优 goal 的分），全局分最高的 `(activity, goal)` 去跑；无效/过期 goal 清除；选中项不变则不重启。

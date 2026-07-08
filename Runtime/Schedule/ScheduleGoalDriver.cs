@@ -6,7 +6,7 @@ namespace Likeon.GAS.AI
 {
     /// <summary>
     /// 把作息表变成"实时的 goal 增删"：进入某条目的窗口 → 造 goal 塞进池；离开窗口 → 从池撤掉。
-    /// 忠实移植 UE <c>UScheduledBehavior_AddNPCGoal</c> 到 StartTime <c>ProvideGoal</c>、到 EndTime 撤销。
+    /// 到 StartTime 发 goal、到 EndTime 撤销。
     /// 纯逻辑（持每条目"是否已发"的状态），可直接测；由组件每 tick 调 <see cref="Sync"/>。
     /// </summary>
     public sealed class ScheduleGoalDriver
