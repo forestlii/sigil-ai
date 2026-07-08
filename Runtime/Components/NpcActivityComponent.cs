@@ -132,5 +132,11 @@ namespace Likeon.GAS.AI
             if (goal != null) goal.CreationTime = _clock?.AccumulatedTime ?? 0f;
             return _pool.Add(goal);
         }
+
+        /// <summary>运行时用代码设置作息表（程序化生成 / demo 用，替代在 Inspector 拖 asset）。</summary>
+        public void SetSchedule(ActivitySchedule schedule)
+        {
+            _driver = schedule != null ? new ScheduleGoalDriver(schedule) : null;
+        }
     }
 }
